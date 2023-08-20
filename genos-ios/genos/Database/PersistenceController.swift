@@ -15,12 +15,21 @@ struct PersistenceController {
         // Create 10 example metrics
         for index in 0 ..< 10 {
             let metric = Metric(context: controller.container.viewContext)
+
+            let calendar = Calendar.current
+            let oneDayAgo = calendar.date(byAdding: .day, value: (index + 1) * -1, to: Date())!
+
             metric.username = "Rodrigodh"
             metric.balance = 20 * Float(index)
-            metric.date = Date()
+            metric.date = oneDayAgo
 
             if index < 3 {
                 metric.exercise = true
+            }
+
+            if index == 0 {
+                metric.date = Date()
+                metric.balance = 20
             }
         }
 
