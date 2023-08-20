@@ -1,12 +1,14 @@
 import SwiftUI
 
-struct IncreaseBalanceButtonView: View {
+struct UpdateBalanceButtonView: View {
+    @Environment(\.managedObjectContext) var managedObjectContext
+    var updateMetric: (_ amount: Float) -> Bool
     var amount: Float
     var color = Color.goldColor
 
     var body: some View {
         Button(action: {
-            // Action to perform when the button is tapped
+            updateMetric(amount)
         }) {
             VStack(alignment: .leading, spacing: 8) {
                 Text("R$\(String(format: "%.2f", amount))")
@@ -23,8 +25,13 @@ struct IncreaseBalanceButtonView: View {
     }
 }
 
-struct IncreaseBalanceButtonView_Previews: PreviewProvider {
+struct UpdateBalanceButtonView_Previews: PreviewProvider {
+    static func example(amount: Float) -> Bool {
+        print("Pressed")
+        return true
+    }
+
     static var previews: some View {
-        IncreaseBalanceButtonView(amount: 10.00)
+        UpdateBalanceButtonView(updateMetric: example, amount: 10.00)
     }
 }
