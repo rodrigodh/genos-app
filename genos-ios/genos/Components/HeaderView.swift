@@ -8,8 +8,9 @@ struct HeaderView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.textColor)
                 .multilineTextAlignment(.leading)
-            
+
             Spacer()
+
             Image("UserProfileImage").resizable().frame(width: 36.0, height: 36.0).scaledToFill().clipShape(Circle())
         }
     }

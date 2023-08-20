@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct genosApp: App {
+struct GenosApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
