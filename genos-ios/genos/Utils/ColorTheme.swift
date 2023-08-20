@@ -8,3 +8,11 @@ extension Color {
     static let loveColor = Color("LoveColor")
     static let foamColor = Color("FoamColor")
 }
+
+struct CustomBackground: View {
+    var body: some View {
+        Rectangle()
+            .fill(Color.baseColor)
+            .edgesIgnoringSafeArea(.all)
+    }
+}

@@ -1,13 +1,5 @@
 import SwiftUI
 
-struct CustomBackground: View {
-    var body: some View {
-        Rectangle()
-            .fill(Color.baseColor)
-            .edgesIgnoringSafeArea(.all)
-    }
-}
-
 struct HomeView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @FetchRequest(entity: Metric.entity(), sortDescriptors: [], animation: .default) private var metrics: FetchedResults<Metric>
@@ -25,7 +17,7 @@ struct HomeView: View {
                         .foregroundColor(.textColor)
                         .multilineTextAlignment(.leading)
                         .padding(.top, 10.0)
-                    MoneyGoalView()
+                    MoneyGoalProgressView()
                         .padding(.top, 5.0)
 
                     ExerciseGoalView().padding(.top, 5.0)

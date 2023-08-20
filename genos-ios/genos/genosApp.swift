@@ -12,6 +12,10 @@ struct GenosApp: App {
     @Environment(\.scenePhase) var scenePhase
     let persistenceController = PersistenceController.shared
 
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(Color.surfaceColor)
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
