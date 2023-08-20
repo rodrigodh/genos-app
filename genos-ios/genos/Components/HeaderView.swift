@@ -10,7 +10,7 @@ struct HeaderView: View {
                 .multilineTextAlignment(.leading)
             
             Spacer()
-            Image("UserProfileImage").resizable().frame(width: 50.0, height: 50.0).scaledToFit().clipShape(Circle())
+            Image("UserProfileImage").resizable().frame(width: 36.0, height: 36.0).scaledToFill().clipShape(Circle())
         }
     }
 }
