@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F549C2D2A92546E008985E7 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F549C2C2A92546E008985E7 /* PersistenceController.swift */; };
+		3F549C302A9254CB008985E7 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F549C2E2A9254CB008985E7 /* Main.xcdatamodeld */; };
 		3F5F450F2A915E6600B4DFD6 /* genosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F450E2A915E6600B4DFD6 /* genosApp.swift */; };
 		3F5F45112A915E6600B4DFD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F45102A915E6600B4DFD6 /* ContentView.swift */; };
 		3F5F45132A915E6700B4DFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F45122A915E6700B4DFD6 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F549C2C2A92546E008985E7 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		3F549C2F2A9254CB008985E7 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		3F5F450B2A915E6600B4DFD6 /* genos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F450E2A915E6600B4DFD6 /* genosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genosApp.swift; sourceTree = "<group>"; };
 		3F5F45102A915E6600B4DFD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F549C2B2A92541C008985E7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3F549C2C2A92546E008985E7 /* PersistenceController.swift */,
+				3F549C2E2A9254CB008985E7 /* Main.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		3F5F45022A915E6600B4DFD6 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 		3F5F450D2A915E6600B4DFD6 /* genos */ = {
 			isa = PBXGroup;
 			children = (
+				3F549C2B2A92541C008985E7 /* Database */,
 				3F913D572A919AFC00735333 /* Utils */,
 				3F913D522A9163D300735333 /* Components */,
 				3F913D4F2A9162E700735333 /* Views */,
@@ -328,9 +342,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F549C2D2A92546E008985E7 /* PersistenceController.swift in Sources */,
 				3F913D542A91946000735333 /* HeaderView.swift in Sources */,
 				3F913D512A91630E00735333 /* HomeView.swift in Sources */,
 				3F913D5B2A91A74000735333 /* ColorTheme.swift in Sources */,
+				3F549C302A9254CB008985E7 /* Main.xcdatamodeld in Sources */,
 				3F5F45112A915E6600B4DFD6 /* ContentView.swift in Sources */,
 				3F913D562A91995C00735333 /* MoneyGoalView.swift in Sources */,
 				3F5F450F2A915E6600B4DFD6 /* genosApp.swift in Sources */,
@@ -660,6 +676,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F549C2E2A9254CB008985E7 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F549C2F2A9254CB008985E7 /* Main.xcdatamodel */,
+			);
+			currentVersion = 3F549C2F2A9254CB008985E7 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3F5F45032A915E6600B4DFD6 /* Project object */;
 }

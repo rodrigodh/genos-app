@@ -26,6 +26,7 @@ struct HomeView: View {
                         .padding(.top, 5.0)
 
                     ExerciseGoalView().padding(.top, 5.0)
+
                     Text("Histórico")
                         .font(.title)
                         .fontWeight(.bold)
