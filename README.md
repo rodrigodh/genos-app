@@ -1,4 +1,4 @@
-# genos-app
+# [WIP] genos-app
 
 ## This app is only made to organize my personal finance and remember me of doing my exercises in a fun way.
 ### Made it using Go And Swift
