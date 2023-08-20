@@ -16,6 +16,7 @@
 		3F5F45202A915E6700B4DFD6 /* genosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F451F2A915E6700B4DFD6 /* genosTests.swift */; };
 		3F5F452A2A915E6700B4DFD6 /* genosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F45292A915E6700B4DFD6 /* genosUITests.swift */; };
 		3F5F452C2A915E6700B4DFD6 /* genosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F452B2A915E6700B4DFD6 /* genosUITestsLaunchTests.swift */; };
+		3F81C9B12A928C77002D44EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81C9B02A928C77002D44EA /* Constants.swift */; };
 		3F913D512A91630E00735333 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D502A91630E00735333 /* HomeView.swift */; };
 		3F913D542A91946000735333 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D532A91946000735333 /* HeaderView.swift */; };
 		3F913D562A91995C00735333 /* MoneyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D552A91995C00735333 /* MoneyGoalView.swift */; };
@@ -54,6 +55,7 @@
 		3F5F45252A915E6700B4DFD6 /* genosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F45292A915E6700B4DFD6 /* genosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genosUITests.swift; sourceTree = "<group>"; };
 		3F5F452B2A915E6700B4DFD6 /* genosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F81C9B02A928C77002D44EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3F913D502A91630E00735333 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3F913D532A91946000735333 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3F913D552A91995C00735333 /* MoneyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyGoalView.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				3F913D5A2A91A74000735333 /* ColorTheme.swift */,
+				3F81C9B02A928C77002D44EA /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F549C2D2A92546E008985E7 /* PersistenceController.swift in Sources */,
+				3F81C9B12A928C77002D44EA /* Constants.swift in Sources */,
 				3F913D542A91946000735333 /* HeaderView.swift in Sources */,
 				3F913D512A91630E00735333 /* HomeView.swift in Sources */,
 				3F913D5B2A91A74000735333 /* ColorTheme.swift in Sources */,

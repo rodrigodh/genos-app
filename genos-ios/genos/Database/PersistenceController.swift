@@ -12,9 +12,12 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let controller = PersistenceController(inMemory: true)
 
-        // Create 10 example programming languages.
-        for _ in 0 ..< 10 {
+        // Create 10 example metrics
+        for index in 0 ..< 10 {
             let metric = Metric(context: controller.container.viewContext)
+            metric.username = "Rodrigodh"
+            metric.balance = 20 * Float(index)
+            metric.date = Date()
         }
 
         return controller
@@ -35,8 +38,6 @@ struct PersistenceController {
     // An initializer to load Core Data, optionally able
     // to use an in-memory store.
     init(inMemory: Bool = false) {
-        // If you didn't name your model Main you'll need
-        // to change this name below.
         container = NSPersistentContainer(name: "Main")
 
         if inMemory {
