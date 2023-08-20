@@ -11,7 +11,7 @@ struct HeaderView: View {
 
             Spacer()
 
-            Image("UserProfileImage").resizable().frame(width: 36.0, height: 36.0).scaledToFill().clipShape(Circle())
+            Image("UserProfileImage").resizable().frame(width: 36.0, height: 36.0).aspectRatio(contentMode: .fill).scaledToFill().clipShape(Circle())
         }
     }
 }

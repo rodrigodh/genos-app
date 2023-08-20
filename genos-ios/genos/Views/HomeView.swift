@@ -1,14 +1,9 @@
 import SwiftUI
 
-struct CustomBackground: View {
-    var body: some View {
-        Rectangle()
-            .fill(Color.baseColor)
-            .edgesIgnoringSafeArea(.all)
-    }
-}
-
 struct HomeView: View {
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @FetchRequest(entity: Metric.entity(), sortDescriptors: [], animation: .default) private var metrics: FetchedResults<Metric>
+
     var body: some View {
         NavigationView {
             ZStack(alignment: .topLeading) {
@@ -22,10 +17,11 @@ struct HomeView: View {
                         .foregroundColor(.textColor)
                         .multilineTextAlignment(.leading)
                         .padding(.top, 10.0)
-                    MoneyGoalView()
+                    MoneyGoalProgressView()
                         .padding(.top, 5.0)
 
                     ExerciseGoalView().padding(.top, 5.0)
+
                     Text("Histórico")
                         .font(.title)
                         .fontWeight(.bold)
@@ -34,9 +30,7 @@ struct HomeView: View {
                         .padding(.top, 10.0)
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 16.0) {
-                            HistoryCardView()
-                            HistoryCardView()
-                            HistoryCardView()
+                            ForEach(metrics) { metric in HistoryCardView(metric: metric) }
                         }
                     }
                 }.padding([.top, .leading, .trailing], 20.0)
@@ -47,6 +41,9 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        let persistenceController = PersistenceController.preview
+        let viewContext = persistenceController.container.viewContext
+
+        return HomeView().environment(\.managedObjectContext, viewContext)
     }
 }

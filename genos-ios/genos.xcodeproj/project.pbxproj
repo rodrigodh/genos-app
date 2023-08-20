@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1E93DA2A92AAFA007DD5B2 /* MoneyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E93D92A92AAFA007DD5B2 /* MoneyGoalView.swift */; };
+		3F1E93DC2A92AEE7007DD5B2 /* IncreaseBalanceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E93DB2A92AEE7007DD5B2 /* IncreaseBalanceButtonView.swift */; };
+		3F549C2D2A92546E008985E7 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F549C2C2A92546E008985E7 /* PersistenceController.swift */; };
+		3F549C302A9254CB008985E7 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F549C2E2A9254CB008985E7 /* Main.xcdatamodeld */; };
 		3F5F450F2A915E6600B4DFD6 /* genosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F450E2A915E6600B4DFD6 /* genosApp.swift */; };
 		3F5F45112A915E6600B4DFD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F45102A915E6600B4DFD6 /* ContentView.swift */; };
 		3F5F45132A915E6700B4DFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F45122A915E6700B4DFD6 /* Assets.xcassets */; };
@@ -14,9 +18,11 @@
 		3F5F45202A915E6700B4DFD6 /* genosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F451F2A915E6700B4DFD6 /* genosTests.swift */; };
 		3F5F452A2A915E6700B4DFD6 /* genosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F45292A915E6700B4DFD6 /* genosUITests.swift */; };
 		3F5F452C2A915E6700B4DFD6 /* genosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F452B2A915E6700B4DFD6 /* genosUITestsLaunchTests.swift */; };
+		3F81C9B12A928C77002D44EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81C9B02A928C77002D44EA /* Constants.swift */; };
+		3F81C9B32A9295B6002D44EA /* ManageDailyBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81C9B22A9295B6002D44EA /* ManageDailyBalanceView.swift */; };
 		3F913D512A91630E00735333 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D502A91630E00735333 /* HomeView.swift */; };
 		3F913D542A91946000735333 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D532A91946000735333 /* HeaderView.swift */; };
-		3F913D562A91995C00735333 /* MoneyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D552A91995C00735333 /* MoneyGoalView.swift */; };
+		3F913D562A91995C00735333 /* MoneyGoalProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D552A91995C00735333 /* MoneyGoalProgressView.swift */; };
 		3F913D592A91A07D00735333 /* ExerciseGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D582A91A07D00735333 /* ExerciseGoalView.swift */; };
 		3F913D5B2A91A74000735333 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D5A2A91A74000735333 /* ColorTheme.swift */; };
 		3F913D5D2A91A81C00735333 /* HistoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F913D5C2A91A81C00735333 /* HistoryCardView.swift */; };
@@ -40,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F1E93D92A92AAFA007DD5B2 /* MoneyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyGoalView.swift; sourceTree = "<group>"; };
+		3F1E93DB2A92AEE7007DD5B2 /* IncreaseBalanceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreaseBalanceButtonView.swift; sourceTree = "<group>"; };
+		3F549C2C2A92546E008985E7 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		3F549C2F2A9254CB008985E7 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		3F5F450B2A915E6600B4DFD6 /* genos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F450E2A915E6600B4DFD6 /* genosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genosApp.swift; sourceTree = "<group>"; };
 		3F5F45102A915E6600B4DFD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,9 +60,11 @@
 		3F5F45252A915E6700B4DFD6 /* genosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F45292A915E6700B4DFD6 /* genosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genosUITests.swift; sourceTree = "<group>"; };
 		3F5F452B2A915E6700B4DFD6 /* genosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F81C9B02A928C77002D44EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F81C9B22A9295B6002D44EA /* ManageDailyBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageDailyBalanceView.swift; sourceTree = "<group>"; };
 		3F913D502A91630E00735333 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3F913D532A91946000735333 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		3F913D552A91995C00735333 /* MoneyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyGoalView.swift; sourceTree = "<group>"; };
+		3F913D552A91995C00735333 /* MoneyGoalProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyGoalProgressView.swift; sourceTree = "<group>"; };
 		3F913D582A91A07D00735333 /* ExerciseGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGoalView.swift; sourceTree = "<group>"; };
 		3F913D5A2A91A74000735333 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		3F913D5C2A91A81C00735333 /* HistoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCardView.swift; sourceTree = "<group>"; };
@@ -83,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F549C2B2A92541C008985E7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3F549C2C2A92546E008985E7 /* PersistenceController.swift */,
+				3F549C2E2A9254CB008985E7 /* Main.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		3F5F45022A915E6600B4DFD6 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +127,7 @@
 		3F5F450D2A915E6600B4DFD6 /* genos */ = {
 			isa = PBXGroup;
 			children = (
+				3F549C2B2A92541C008985E7 /* Database */,
 				3F913D572A919AFC00735333 /* Utils */,
 				3F913D522A9163D300735333 /* Components */,
 				3F913D4F2A9162E700735333 /* Views */,
@@ -154,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				3F913D502A91630E00735333 /* HomeView.swift */,
+				3F81C9B22A9295B6002D44EA /* ManageDailyBalanceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,9 +185,11 @@
 			isa = PBXGroup;
 			children = (
 				3F913D532A91946000735333 /* HeaderView.swift */,
-				3F913D552A91995C00735333 /* MoneyGoalView.swift */,
+				3F913D552A91995C00735333 /* MoneyGoalProgressView.swift */,
 				3F913D582A91A07D00735333 /* ExerciseGoalView.swift */,
 				3F913D5C2A91A81C00735333 /* HistoryCardView.swift */,
+				3F1E93D92A92AAFA007DD5B2 /* MoneyGoalView.swift */,
+				3F1E93DB2A92AEE7007DD5B2 /* IncreaseBalanceButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -173,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				3F913D5A2A91A74000735333 /* ColorTheme.swift */,
+				3F81C9B02A928C77002D44EA /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -328,13 +354,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F549C2D2A92546E008985E7 /* PersistenceController.swift in Sources */,
+				3F81C9B12A928C77002D44EA /* Constants.swift in Sources */,
+				3F1E93DC2A92AEE7007DD5B2 /* IncreaseBalanceButtonView.swift in Sources */,
 				3F913D542A91946000735333 /* HeaderView.swift in Sources */,
 				3F913D512A91630E00735333 /* HomeView.swift in Sources */,
+				3F81C9B32A9295B6002D44EA /* ManageDailyBalanceView.swift in Sources */,
 				3F913D5B2A91A74000735333 /* ColorTheme.swift in Sources */,
+				3F549C302A9254CB008985E7 /* Main.xcdatamodeld in Sources */,
 				3F5F45112A915E6600B4DFD6 /* ContentView.swift in Sources */,
-				3F913D562A91995C00735333 /* MoneyGoalView.swift in Sources */,
+				3F913D562A91995C00735333 /* MoneyGoalProgressView.swift in Sources */,
 				3F5F450F2A915E6600B4DFD6 /* genosApp.swift in Sources */,
 				3F913D592A91A07D00735333 /* ExerciseGoalView.swift in Sources */,
+				3F1E93DA2A92AAFA007DD5B2 /* MoneyGoalView.swift in Sources */,
 				3F913D5D2A91A81C00735333 /* HistoryCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,6 +692,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F549C2E2A9254CB008985E7 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F549C2F2A9254CB008985E7 /* Main.xcdatamodel */,
+			);
+			currentVersion = 3F549C2F2A9254CB008985E7 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3F5F45032A915E6600B4DFD6 /* Project object */;
 }

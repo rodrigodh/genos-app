@@ -1,16 +1,17 @@
 {
   "images" : [
     {
-      "compression-type" : "lossy",
-      "filename" : "Os_Homens_que_se_Casaram_com_a_Asuka_de_Evangelion_800x418.jpg",
+      "filename" : "Ellipse 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Ellipse 1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Ellipse 1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
