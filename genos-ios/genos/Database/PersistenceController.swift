@@ -18,6 +18,10 @@ struct PersistenceController {
             metric.username = "Rodrigodh"
             metric.balance = 20 * Float(index)
             metric.date = Date()
+
+            if index < 3 {
+                metric.exercise = true
+            }
         }
 
         return controller
@@ -30,7 +34,7 @@ struct PersistenceController {
             do {
                 try context.save()
             } catch {
-                // Show some error here
+                fatalError("Failed to save changes")
             }
         }
     }

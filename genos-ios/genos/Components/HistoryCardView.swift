@@ -42,7 +42,7 @@ struct HistoryCardView: View {
                     .foregroundColor(.textColor)
                     .multilineTextAlignment(.leading)
 
-                Image(systemName: "checkmark.seal.fill").resizable().frame(width: 16, height: 16).foregroundColor(.foamColor)
+                Image(systemName: metric.exercise ? "checkmark.seal.fill" : "xmark.seal.fill").resizable().frame(width: 16, height: 16).foregroundColor(metric.exercise ? .foamColor : .loveColor)
             }.offset(y: -10)
 
         }.padding().background(Color.surfaceColor).cornerRadius(10)
