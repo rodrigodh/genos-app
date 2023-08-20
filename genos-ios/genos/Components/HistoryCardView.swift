@@ -2,22 +2,13 @@ import SwiftUI
 
 struct HistoryCardView: View {
     var metric: Metric
-    var balanceGoalPercentage: String = ""
-    var isBalanceGoalReached: Bool = false
-
-    init(metric: Metric) {
-        self.metric = metric
-        isBalanceGoalReached = metric.balance < metricsBalanceGoal
-        calculateBalanceGoalPercentage()
-    }
-
-    mutating func calculateBalanceGoalPercentage() {
-        let rawPercentage = (metric.balance / metricsBalanceGoal) * 100
-        let removeDecimalPlaces = String(format: "%.1f", rawPercentage)
-        balanceGoalPercentage = removeDecimalPlaces
-    }
 
     var body: some View {
+        let rawPercentage = (metric.balance / metricsBalanceGoal) * 100
+        let balanceGoalPercentage = String(format: "%.1f", rawPercentage)
+
+        let isBalanceGoalReached = metric.balance < metricsBalanceGoal
+
         VStack(alignment: .leading) {
             Text(metric.date?.formatted(date: .numeric, time: .omitted) ?? "")
                 .font(.title)

@@ -32,7 +32,7 @@ struct MoneyGoalView: View {
 
 struct MoneyGoalView_Previews: PreviewProvider {
     static var previews: some View {
-        var currentBalance = 10.0
+        let currentBalance = 10.0
         MoneyGoalView(currentBalance: Float(currentBalance))
     }
 }

@@ -4,6 +4,26 @@ struct HomeView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @FetchRequest(entity: Metric.entity(), sortDescriptors: [], animation: .default) private var metrics: FetchedResults<Metric>
 
+    var todaysMetric: Metric? {
+        let currentDate = Date()
+
+        let filteredTodayMetrics = metrics.filter { metric in
+            let calendar = Calendar.current
+
+            if metric.date == nil {
+                return false
+            }
+
+            return calendar.isDate(metric.date!, inSameDayAs: currentDate)
+        }
+
+        return filteredTodayMetrics.first
+    }
+
+    func updateExercise() {
+        todaysMetric?.exercise = !(todaysMetric?.exercise ?? false)
+    }
+
     var body: some View {
         NavigationView {
             ZStack(alignment: .topLeading) {
@@ -17,10 +37,10 @@ struct HomeView: View {
                         .foregroundColor(.textColor)
                         .multilineTextAlignment(.leading)
                         .padding(.top, 10.0)
-                    MoneyGoalProgressView()
+                    MoneyGoalProgressView(metric: todaysMetric ?? nil)
                         .padding(.top, 5.0)
 
-                    ExerciseGoalView().padding(.top, 5.0)
+                    ExerciseGoalView(metric: todaysMetric ?? nil, updateExercise: updateExercise).padding(.top, 5.0)
 
                     Text("Histórico")
                         .font(.title)
