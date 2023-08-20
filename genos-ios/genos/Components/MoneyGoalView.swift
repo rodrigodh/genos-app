@@ -8,15 +8,18 @@ struct MoneyGoalView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.textColor)
                 .multilineTextAlignment(.leading)
-            
+
             Text("95% / R$60,00")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(.goldColor)
                 .multilineTextAlignment(.leading)
-            
-            ProgressView(value:0.8).progressViewStyle(.linear).accentColor(Color.loveColor).foregroundColor(Color.goldColor)
-            
+
+            ProgressView(value: 0.8)
+                .progressViewStyle(.linear)
+                .accentColor(Color.loveColor)
+                .foregroundColor(Color.goldColor)
+
         }.padding().background(Color.surfaceColor).cornerRadius(10)
     }
 }

@@ -15,7 +15,7 @@ struct HomeView: View {
                 CustomBackground()
                 VStack(alignment: .leading) {
                     HeaderView()
-                    
+
                     Text("Metas diárias")
                         .font(.title)
                         .fontWeight(.bold)
@@ -24,7 +24,7 @@ struct HomeView: View {
                         .padding(.top, 10.0)
                     MoneyGoalView()
                         .padding(.top, 5.0)
-                    
+
                     ExerciseGoalView().padding(.top, 5.0)
                     Text("Histórico")
                         .font(.title)

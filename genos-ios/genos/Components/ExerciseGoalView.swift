@@ -8,20 +8,19 @@ struct ExerciseGoalView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.textColor)
                 .multilineTextAlignment(.leading)
-            
-            HStack() {
+
+            HStack {
                 Text("Completo")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.foamColor)
                     .multilineTextAlignment(.leading)
-                
+
                 Spacer()
-                
+
                 Image(systemName: "checkmark.seal.fill").resizable().frame(width: 24, height: 24).foregroundColor(.foamColor)
             }.offset(y: -10)
 
-            
         }.padding().background(Color.surfaceColor).cornerRadius(10)
     }
 }
