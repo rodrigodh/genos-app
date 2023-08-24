@@ -20,6 +20,11 @@ struct HomeView: View {
         return filteredTodayMetrics.first
     }
 
+    var sortedMetrics: [Metric] {
+        let sortdeByDate = metrics.sorted { $0.date ?? nil ?? Date() > $1.date ?? Date() }
+        return sortdeByDate
+    }
+
     func updateExercise() {
         todaysMetric?.exercise = !(todaysMetric?.exercise ?? false)
     }
@@ -48,9 +53,10 @@ struct HomeView: View {
                         .foregroundColor(.textColor)
                         .multilineTextAlignment(.leading)
                         .padding(.top, 10.0)
+
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 16.0) {
-                            ForEach(metrics) { metric in HistoryCardView(metric: metric) }
+                            ForEach(sortedMetrics) { metric in HistoryCardView(metric: metric) }
                         }
                     }
                 }.padding([.top, .leading, .trailing], 20.0)
